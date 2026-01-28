@@ -1,0 +1,1 @@
+# pip install langchain pydantic langchain-google-genai
