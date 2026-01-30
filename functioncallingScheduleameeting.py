@@ -7,8 +7,10 @@
 
 from google import genai
 from google.genai import types
+from dotenv import load_dotenv
 import os
 
+load_dotenv()  # loads .env into environment
 
 GEMINI_API_KEY = os.getenv("openai_api_key")
 

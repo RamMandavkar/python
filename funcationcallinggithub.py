@@ -3,9 +3,14 @@
 # https://github.com/settings/personal-access-tokens/11019343
 # pip install requests
 
+from google import genai
+from google.genai import types
+from dotenv import load_dotenv
 import requests
 import json
 import os
+
+load_dotenv()  # loads .env into environment
 
 GITHUB_TOKEN = os.getenv("github_token")
 USERNAME = os.getenv("github_username")

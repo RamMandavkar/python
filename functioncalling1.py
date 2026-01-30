@@ -8,9 +8,12 @@
 ## 1. Required Imports
 from google import genai
 from google.genai import types
+from dotenv import load_dotenv
 import os
 import requests
 
+
+load_dotenv()  # loads .env into environment
 
 ## 2. Setting API Keys
 GEMINI_API_KEY = os.getenv("openai_api_key")

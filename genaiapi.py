@@ -1,7 +1,10 @@
 # pip install google-genai
 # pip install python-dotenv
 from google import genai
+from dotenv import load_dotenv
 import os
+
+load_dotenv()  # loads .env into environment
 
 GEMINI_API_KEY = os.getenv("openai_api_key")
 

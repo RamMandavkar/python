@@ -1,7 +1,10 @@
 
 # pip install PyGithub
 from github import Github
+from dotenv import load_dotenv
 import os
+
+load_dotenv()  # loads .env into environment
 
 GITHUB_TOKEN = os.getenv("github_token")
 

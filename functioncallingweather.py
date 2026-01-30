@@ -8,9 +8,11 @@
 ## 1. Required Imports
 from google import genai
 from google.genai import types
+from dotenv import load_dotenv
 import requests
 import os
 
+load_dotenv()  # loads .env into environment
 # -----------------------------
 # 1. Set Your API Keys
 # -----------------------------
