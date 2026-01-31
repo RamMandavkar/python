@@ -24,19 +24,19 @@ OPENWEATHER_API_KEY=  os.getenv("openweather_api_key")
 # -----------------------------
 # 2. Define the Real Function
 # -----------------------------
-# def get_current_temperature(location):
-#     """Fetch real-time temperature for a given location using OpenWeatherMap API."""
-#     url = f"http://api.openweathermap.org/data/2.5/weather?q={location}&appid={OPENWEATHER_API_KEY}&units=metric"
-#     response = requests.get(url)
-#     data = response.json()
-#     print ("tsee st :: ", data['main']['temp'])
-#     if response.status_code == 200:
-#         return data['main']['temp']
-#     else:
-#         raise Exception(f"Error fetching weather: {data.get('message', 'Unknown error')}")
+def get_current_temperature(location):
+    """Fetch real-time temperature for a given location using OpenWeatherMap API."""
+    url = f"http://api.openweathermap.org/data/2.5/weather?q={location}&appid={OPENWEATHER_API_KEY}&units=metric"
+    response = requests.get(url)
+    data = response.json()
+    print ("tsee st :: ", data['main']['temp'])
+    if response.status_code == 200:
+        return data['main']['temp']
+    else:
+        raise Exception(f"Error fetching weather: {data.get('message', 'Unknown error')}")
 
-#if __name__ == "__main__":
-#   print(get_current_temperature("gurugram, haryana"))
+if __name__ == "__main__":
+  print(get_current_temperature("gurugram, haryana"))
 
 # -----------------------------
 # 3. Define Function Schema for Gemini
