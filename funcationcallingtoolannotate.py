@@ -27,12 +27,8 @@ from langchain_google_genai import ChatGoogleGenerativeAI
 import os
 
 # set your API key (or pass api_key=... when instantiating)
-os.environ["GOOGLE_API_KEY"] = GEMINI_API_KEY
-
-llm = ChatGoogleGenerativeAI(
-    model="gemini-2.5-flash",
-    temperature=0
-)
+llm = ChatGoogleGenerativeAI(model=os.getenv("gemini_model_name"),
+                             google_api_key=os.getenv("openai_api_key"))
 
 # 4. Create the agent (use create_agent instead of create_tool_calling_agent)
 from langchain.agents import create_agent
