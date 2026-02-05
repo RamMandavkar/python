@@ -24,7 +24,7 @@ OPENWEATHER_API_KEY=  os.getenv("openweather_api_key")
 # -----------------------------
 # 2. Define the Real Function
 # -----------------------------
-def get_current_temperature(location):
+def get_current_temperature(location: str):
     """Fetch real-time temperature for a given location using OpenWeatherMap API."""
     url = f"http://api.openweathermap.org/data/2.5/weather?q={location}&appid={OPENWEATHER_API_KEY}&units=metric"
     response = requests.get(url)
@@ -96,11 +96,11 @@ if hasattr(first_part, "function_call") and first_part.function_call:
     if function_call.name == "get_current_temperature":
         location = function_call.args.get("location")
         print("location: ",location)
-        # try:
-        #     temperature = get_current_temperature(location)
-        #     print(f"The current  temperature in {location} is {temperature}°C ")
-        # except Exception as e:
-        #     print(f"Error: {e}")
+        try:
+            temperature = get_current_temperature(location)
+            print(f"The current  temperature in {location} is {temperature}°C ")
+        except Exception as e:
+            print(f"Error: {e}")
 else:
     # If Gemini doesn't call the function, just show its response
     print("No function call found. Gemini says:")
