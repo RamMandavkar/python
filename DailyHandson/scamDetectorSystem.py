@@ -1,3 +1,5 @@
+# https://codeshare.io/ammvq4
+
 import os
 from google import genai
 from dotenv import load_dotenv
