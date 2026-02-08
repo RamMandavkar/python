@@ -12,7 +12,7 @@ import os
 
 load_dotenv()  # loads .env into environment
 
-GEMINI_API_KEY = os.getenv("openai_api_key")
+GEMINI_API_KEY = os.getenv("gemini_api_key")
 
 # Define the function declaration for the model
 schedule_meeting_function = {

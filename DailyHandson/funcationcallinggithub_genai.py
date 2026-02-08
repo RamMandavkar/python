@@ -14,7 +14,7 @@ import json
 
 load_dotenv()  # loads .env into environment
 
-GEMINI_API_KEY = os.getenv("openai_api_key")
+GEMINI_API_KEY = os.getenv("gemini_api_key")
 GITHUB_TOKEN = os.getenv("github_token")
 USERNAME = os.getenv("github_username")
 

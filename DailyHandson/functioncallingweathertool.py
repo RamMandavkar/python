@@ -34,7 +34,7 @@ import os
 
 # set your API key (or pass api_key=... when instantiating)
 llm = ChatGoogleGenerativeAI(model=os.getenv("gemini_model_name"),
-                             google_api_key=os.getenv("openai_api_key"))
+                             google_api_key=os.getenv("gemini_api_key"))
 
 # 4. Create the agent (use create_agent instead of create_tool_calling_agent)
 from langchain.agents import create_agent

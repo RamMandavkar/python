@@ -12,7 +12,8 @@ import os
 
 load_dotenv()  # loads .env into environment
 
-GEMINI_API_KEY = os.getenv("openai_api_key")
+GEMINI_API_KEY = os.getenv("gemini_api_key")
+GEMINI_MODEL_NAME = os.getenv("gemini_model_name")
 
 @tool
 def add(a: int, b: int) -> int:
@@ -36,7 +37,7 @@ import os
 
 # set your API key (or pass api_key=... when instantiating)
 llm = ChatGoogleGenerativeAI(model=os.getenv("gemini_model_name"),
-                             google_api_key=os.getenv("openai_api_key"))
+                             google_api_key=GEMINI_API_KEY)
 
 # 4. Create the agent (use create_agent instead of create_tool_calling_agent)
 from langchain.agents import create_agent

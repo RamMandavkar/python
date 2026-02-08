@@ -7,7 +7,7 @@ import os
 
 load_dotenv()  # loads .env into environment
 # Replace with your own keys or use environment variables
-GEMINI_API_KEY = os.getenv("openai_api_key")
+GEMINI_API_KEY = os.getenv("gemini_api_key")
 
 client = genai.Client(api_key=GEMINI_API_KEY)
 
