@@ -14,7 +14,7 @@ PROJECT_ROOT = Path(__file__).parent
 load_dotenv(PROJECT_ROOT / ".env")
 
 # API Configuration
-GEMINI_API_KEY = os.getenv("openai_api_key")
+GEMINI_API_KEY = os.getenv("gemini_api_key")
 
 # LLM Settings
 DEFAULT_MODEL = "gemini-2.5-flash"

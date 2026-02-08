@@ -19,7 +19,7 @@ load_dotenv()  # loads .env into environment
 def ask_question(question, messages):
     # Instantiate an OpenAI Client
     client = OpenAI(
-        api_key=os.getenv("openai_api_key"),
+        api_key=os.getenv("gemini_api_key"),
         base_url=os.getenv("openai_base_url")
     )
 

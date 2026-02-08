@@ -7,7 +7,7 @@ from dotenv import load_dotenv
 load_dotenv()  # lo
 # --- API KEY CONFIGURATION ---
 # export GOOGLE_API_KEY="YOUR_API_KEY"
-GEMINI_API_KEY = os.getenv("openai_api_key")
+GEMINI_API_KEY = os.getenv("gemini_api_key")
 
 if not GEMINI_API_KEY:
     raise ValueError("Please set the GOOGLE_API_KEY environment variable.")
