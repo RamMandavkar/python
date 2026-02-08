@@ -18,9 +18,13 @@ load_dotenv()  # loads .env into environment
 
 def ask_question(question, messages):
     # Instantiate an OpenAI Client
+    # Gemini models are accessible using the OpenAI libraries and APIs, 
+    # but you need to specify the base URL and API key for Gemini in your environment variables.
     client = OpenAI(
+        #  with your actual Gemini API key, which you can get in Google AI Studio. 
         api_key=os.getenv("gemini_api_key"),
-        base_url=os.getenv("openai_base_url")
+        # This tells the OpenAI library to send requests to the Gemini API endpoint instead of the default URL.
+        base_url=os.getenv("gemini_base_url")
     )
 
     messages.append({"role": "user", "content": question})
