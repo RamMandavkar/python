@@ -14,6 +14,7 @@ load_dotenv()  # loads .env into environment
 
 GEMINI_API_KEY = os.getenv("gemini_api_key")
 GEMINI_MODEL_NAME = os.getenv("gemini_model_name")
+
 @tool
 def add(a: int, b: int) -> int:
     """Add two integers"""
@@ -56,3 +57,18 @@ print(resp2["messages"][-1].content)
 
 resp3 = agent.invoke({"messages":[{"role":"user","content":"subtract 7 and 6"}]})
 print(resp3["messages"][-1].content)
+
+from google import genai
+
+client = genai.Client(api_key=GEMINI_API_KEY)
+# Register the tool and enable 'Automatic' calling
+chat = client.chats.create(
+    model=GEMINI_MODEL_NAME,
+    config={
+        'tools': [add, multiply, subtract]
+    }
+)
+
+# Gemini will call the function, get the result, and summarize it in one go
+response = chat.send_message("What is 12 plus 8?")
+print(response.text)
