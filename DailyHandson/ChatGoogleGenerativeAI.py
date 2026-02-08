@@ -8,6 +8,6 @@ import os
 load_dotenv()  # loads .env into environment
 
 llm = ChatGoogleGenerativeAI(model=os.getenv("gemini_model_name"),
-                             google_api_key=os.getenv("openai_api_key"))
+                             google_api_key=os.getenv("gemini_api_key"))
 response = llm.invoke("What is the capital of France?")
 print(response)

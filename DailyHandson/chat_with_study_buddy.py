@@ -12,7 +12,7 @@ load_dotenv()  # loads .env into environment
 # On Linux/macOS: export GOOGLE_API_KEY='YOUR_API_KEY'
 # On Windows: set GOOGLE_API_KEY='YOUR_API_KEY'
 # Or, for temporary testing, uncomment and use the line below.
-GEMINI_API_KEY = os.getenv("openai_api_key")
+GEMINI_API_KEY = os.getenv("gemini_api_key")
 
 if not GEMINI_API_KEY:
     raise ValueError("Please set the GOOGLE_API_KEY environment variable.")

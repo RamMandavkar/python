@@ -16,7 +16,7 @@ import requests
 load_dotenv()  # loads .env into environment
 
 ## 2. Setting API Keys
-GEMINI_API_KEY = os.getenv("openai_api_key")
+GEMINI_API_KEY = os.getenv("gemini_api_key")
 OPENWEATHER_API_KEY=  os.getenv("openweather_api_key") 
 
 ## 3. Function to be called
