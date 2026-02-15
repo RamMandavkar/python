@@ -45,5 +45,14 @@ chat = client.chats.create(
 response = chat.send_message("What is 12 plus 8? and then subtract 5 and then multiply the result by 2")
 print(response.text)
 
-response = chat.send_message("What is 12 plus 8? if the result greater then 19 then subtract 5 if the result less then 19 and then multiply the result by 2")
+response = chat.send_message("What is 12 plus 8? "
+    "   if the result greater then 19 then subtract 5 "
+    "   if the result less then 19 and then multiply the result by 2")
 print(response.text)
+
+response = chat.send_message(
+    "What is 12 plus 8? "
+    "   if the result greater then 19 then subtract 5 else multiply the result by 2"
+    "   if the result less then 19 and then subtract the result by 100")
+print(response.text)
+
