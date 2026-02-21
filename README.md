@@ -18,3 +18,34 @@ python test checkin
 # git remote -v
 # git rebase -i 65e8374757015aa9cae016d0d9b7b64c57f5a48b
 #
+
+# View -> Command Palette → Developer: Reload Window
+# View -> Command Palette → Python: Restart Language Server
+
+# Ensure VS Code is using that interpreter: 
+# Command Palette → Python: Select Interpreter → # choose #your venv/conda/env.
+
+# python --version
+# pip show langchain
+# pip install --upgrade langchain
+
+# Complete RAG Architecture with Chunking
+            Raw Documents
+                ↓
+            Chunking
+                ↓
+            Embeddings (vectorize chunks)
+                ↓
+            Vector Database (store vectors)
+                ↓
+            User Query
+                ↓
+            Query Embedding
+                ↓
+            Similarity Search (cosine similarity)
+                ↓
+            Top K relevant chunks
+                ↓
+            LLM + Context
+                ↓
+            Final Answer
