@@ -36,7 +36,7 @@
 * Install/Upgrade Langchain: `pip install --upgrade langchain`
 * Check Langchain version: `pip show langchain`
 
-## Complete RAG(Retrieval-Augmented Generation) Architecture with Chunking
+### Complete RAG(Retrieval-Augmented Generation) Architecture with Chunking
             Raw Documents
                 ↓
             Chunking
@@ -57,7 +57,7 @@
                 ↓
             Final Answer
 
-# Complete End-to-End RAG(Retrieval-Augmented Generation) Flow Diagram 
+### Complete End-to-End RAG(Retrieval-Augmented Generation) Flow Diagram 
                 ┌──────────────────────┐
                 │   External Data      │
                 └──────────┬───────────┘
