@@ -1,35 +1,42 @@
 # python
-python test checkin
+## Project Setup
 
-# git init -- Not required
-# git clone https://github.com/RamMandavkar/python.git -- Not required
+1. init the repository: `git init`
+2. Clone the repository: `git clone https://github.com/RamMandavkar/python.git`
+3. Pull the latest changes: `git pull https://github.com/RamMandavkar/python.git jan2026ai`
+4. To check git status: `git status`
+5. To check git logs: `git log`
 
-# git pull https://github.com/RamMandavkar/python.git jan2026ai
-# git status
-# git checkout -b jan2026ai  -- Not required
-# git add .
-# git remote add origin https://github.com/RamMandavkar/python.git
-# git commit -m 'updated'
-# git push --set-upstream origin jan2026ai
-# git log
-# git status
-# git branch -m jan2026ai
-# git remote set-url origin https://github.com/RamMandavkar/python.git
-# git remote -v
-# git rebase -i 65e8374757015aa9cae016d0d9b7b64c57f5a48b
-#
+## Branch Management
 
-# View -> Command Palette → Developer: Reload Window
-# View -> Command Palette → Python: Restart Language Server
+* Created and switched to branch: `git checkout -b jan2026ai ` 
+* Remote add branch: `git remote add origin https://github.com/RamMandavkar/python.git`
 
-# Ensure VS Code is using that interpreter: 
-# Command Palette → Python: Select Interpreter → # choose #your venv/conda/env.
+## Git Workflow
 
-# python --version
-# pip show langchain
-# pip install --upgrade langchain
+1. Add changes: `git add .`
+2. Commit changes: `git commit -m 'updated'`
+3. Push changes: `git push --set-upstream origin jan2026ai`
 
-# Complete RAG Architecture with Chunking
+## Repository Management
+
+* Added remote origin: `git remote add origin https://github.com/RamMandavkar/python.git`
+* Verified remote origin: `git remote -v`
+* git rebase: `git rebase -i 65e8374757015aa9cae016d0d9b7b64c57f5a48b`
+
+## VS Code Setup
+
+1. Reload VS Code: View -> Command Palette → Developer: Reload Window
+2. Restart Python Language Server: View -> Command Palette → Python: Restart Language Server
+3. Select Python Interpreter: Command Palette → Python: Select Interpreter → choose venv/conda/env
+
+## Python Environment
+
+* Check Python version: `python --version`
+* Install/Upgrade Langchain: `pip install --upgrade langchain`
+* Check Langchain version: `pip show langchain`
+
+## Complete RAG Architecture with Chunking
             Raw Documents
                 ↓
             Chunking
@@ -67,13 +74,13 @@ python test checkin
                 │    Vector Store      │
                 └──────────┬───────────┘
                            ↓
-User Query → Query Embedding
+              User Query → Query Embedding
                            ↓
                 ┌──────────────────────┐
                 │  Similarity Search   │
                 └──────────┬───────────┘
                            ↓
-                Retrieved Context
+                    Retrieved Context
                            ↓
                 ┌──────────────────────┐
                 │       LLM            │
