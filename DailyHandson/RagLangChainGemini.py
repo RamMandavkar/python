@@ -5,7 +5,7 @@
 # ==============================
 import os
 from google import genai
-
+import sys
 # LangChain imports
 from langchain_community.document_loaders import TextLoader
 from langchain_text_splitters import RecursiveCharacterTextSplitter
@@ -39,9 +39,18 @@ class SentenceTransformerEmbeddings(Embeddings):
 # ==============================
 # 2. Load Text File
 # ==============================
+# Get current working directory
+current_dir = os.getcwd()
+print("Current Directory:", current_dir)
+
+# Create full file path
+file_path = os.path.join(current_dir, "\\docs\\companypolicy.txt")
+
+print("File Path:", file_path)
 loader = TextLoader("python/DailyHandson/docs/companypolicy.txt") # your text file
 documents = loader.load()
 print("Loaded Documents:", len(documents))
+sys.exit(0)
 
 # ==============================
 # 3. Split Text into Chunks

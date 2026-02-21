@@ -49,3 +49,34 @@ python test checkin
             LLM + Context
                 ↓
             Final Answer
+
+# Complete End-to-End Flow Diagram
+                ┌──────────────────────┐
+                │   External Data      │
+                └──────────┬───────────┘
+                           ↓
+                ┌──────────────────────┐
+                │  Loader + Splitter   │
+                └──────────┬───────────┘
+                           ↓
+                ┌──────────────────────┐
+                │   Embedding Model    │
+                └──────────┬───────────┘
+                           ↓
+                ┌──────────────────────┐
+                │    Vector Store      │
+                └──────────┬───────────┘
+                           ↓
+User Query → Query Embedding
+                           ↓
+                ┌──────────────────────┐
+                │  Similarity Search   │
+                └──────────┬───────────┘
+                           ↓
+                Retrieved Context
+                           ↓
+                ┌──────────────────────┐
+                │       LLM            │
+                └──────────┬───────────┘
+                           ↓
+                     Final Answer
