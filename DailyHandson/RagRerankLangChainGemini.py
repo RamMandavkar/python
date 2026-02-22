@@ -22,6 +22,8 @@ GEMINI_API_KEY = os.getenv("gemini_api_key")
 print("GEMINI_API_KEY:", GEMINI_API_KEY)
 os.environ["GEMINI_API_KEY"] = GEMINI_API_KEY
 GEMINI_MODEL_NAME=os.getenv("gemini_model_name")
+REPEATABLE = 150
+
 client = genai.Client(api_key=GEMINI_API_KEY)
 # ==============================
 # 2. Load Text File
@@ -36,7 +38,7 @@ print("File Path:", file_path)
 loader = TextLoader("python/DailyHandson/docs/companypolicy.txt") # your text file
 documents = loader.load()
 print("Loaded Documents: ", len(documents))
-print("=" * 100)
+print("=" * REPEATABLE)
 #sys.exit(0)
 
 # ==============================
@@ -76,15 +78,15 @@ vectorstore = FAISS.from_documents(split_docs, embedding_model)
 # 6. Advanced Retrieval Function (Manual RAG)
 # ---------------------------------------------------
 def advanced_retrieve(query, top_k=5):
-    print("=" * 100)
+    print("=" * REPEATABLE)
     print("----> user query:\n", query)
     # Dense retrieval
     results = vectorstore.similarity_search_with_score(query, k=top_k)
-    print("=" * 100)
+    print("=" * REPEATABLE)
     print("----> vectorstore results:\n", results)
     # Manual reranking
     query_embedding = np.array(embedding_model.embed_query(query))
-    print("=" * 100)
+    print("=" * REPEATABLE)
     print("----> vectorstore query_embedding:\n", query_embedding)
 
     reranked = []
@@ -107,7 +109,7 @@ def advanced_retrieve(query, top_k=5):
 # ---------------------------------------------------
 def build_context(docs):
     context = "\n\n".join([doc.page_content for doc in docs])
-    print("=" * 100)
+    print("=" * REPEATABLE)
     print("----> build_context :\n", context)
     return context
 
@@ -120,7 +122,7 @@ def rewrite_query(query):
         model=GEMINI_MODEL_NAME,
         contents=prompt
     )
-    print("=" * 100)
+    print("=" * REPEATABLE)
     print("----> rewrite_query :\n", response.text)
     return response.text
 
@@ -150,7 +152,7 @@ Question:
         model=GEMINI_MODEL_NAME,
         contents=final_prompt
     )
-    print("=" * 100)
+    print("=" * REPEATABLE)
     print("-----> client.models.generate_content response:\n", response.text)
     return response.text
 

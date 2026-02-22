@@ -1,3 +1,4 @@
+# https://docs.google.com/document/d/1iLtmQDddTskVAohqLgHz6oPxZA65jMlUKZVjSq9jW5Q/edit?pli=1&tab=t.0
 # below promt will be used to create a simple scan detection system. 
 # It will analyze messages for common scam indicators and classify them accordingly.
 # The system will look for requests for money or personal information, 
