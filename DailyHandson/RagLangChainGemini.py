@@ -22,7 +22,7 @@ load_dotenv()  # loads .env into environment
 GEMINI_API_KEY = os.getenv("gemini_api_key")
 print("GEMINI_API_KEY:", GEMINI_API_KEY)
 os.environ["GEMINI_API_KEY"] = GEMINI_API_KEY
-
+GEMINI_MODEL_NAME=os.getenv("gemini_model_name")
 # -----------------------------
 # 1️⃣ Custom Embedding Wrapper
 # -----------------------------
@@ -97,7 +97,7 @@ Context:
 Question:
 {query}
 """
-GEMINI_MODEL_NAME=os.getenv("gemini_model_name")
+
 response = client.models.generate_content(
     model=GEMINI_MODEL_NAME,
     contents=prompt

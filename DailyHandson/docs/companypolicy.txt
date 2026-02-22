@@ -1,23 +1,34 @@
-## **Company Policy: Returns and Refunds**
+**Company Overview**
+--------------------
 
-**Effective Date:** February 16, 2026
+XYZ Corporation is a leading e-commerce platform providing a wide range of products to customers across India. We're committed to delivering high-quality products and exceptional customer service.
 
-**Last Updated:** February 16, 2026
+**Eligibility for Refunds**
+-------------------------
 
----
+* Refunds are available for products returned within 30 days of purchase.
+* Products must be in original packaging and condition.
+* Refunds will be processed within 5-7 business days.
 
-### **1. Overview**
+**Return and Cancellation Policy**
+--------------------------------
 
-At **[Company Name]**, we value our customer relationships and strive to provide high-quality products/services. 
-If you are not entirely satisfied with your purchase, we’re here to help. 
-This policy outlines the conditions under which refunds and returns are processed.
+* Returns are accepted within 30 days of purchase.
+* Cancellation requests must be made within 24 hours of placing the order.
 
----
+**Payment Terms**
+----------------
 
-### **2. Eligibility for Refunds**
+* We accept online payments through credit/debit cards, UPI, and net banking.
+* Payment terms are subject to change without prior notice.
 
-To be eligible for a return and subsequent refund, the following conditions must be met:
+**Shipping and Delivery**
+------------------------
 
-* **Timeframe:** Items must be returned within **30 days** of the original purchase date.
-* **Condition:** The item must be unused, in the same condition that you received it, and in its original packaging.
-* **Proof of Purchase:** A receipt or proof of purchase is required for all transactions.
+* Shipping charges are applicable on orders below ₹500.
+* Delivery timelines may vary based on location and product availability.
+
+**Contact Us**
+--------------
+
+For any queries or concerns, reach out to us at support@xyzcorp.com or 1800-XXX-XXXX.
