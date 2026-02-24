@@ -7,7 +7,9 @@ sentences = [
     "I love machine learning",
     "I enjoy studying AI",
     "The sky is blue",
-    "I love machine learning"
+    "I love machine learning",
+    "Man bites dog",
+    "dog bites Man"
 ]
 
 embeddings = model.encode(sentences)
@@ -27,6 +29,8 @@ similarity = util.cos_sim(embeddings[0], embeddings[3])
 print(similarity) 
 sim = cosine_similarity([embeddings[0]], [embeddings[3]])
 print(sim) 
+sim = cosine_similarity([embeddings[4]], [embeddings[5]])
+print("DOG ->", sim) 
 
 # ~0.1 to 0.3 → Not similar
 # ~0.5 to 0.8  → similar
