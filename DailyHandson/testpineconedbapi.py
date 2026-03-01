@@ -1,7 +1,6 @@
 
 ## pip install pinecone
 ## https://app.pinecone.io/organizations/-OmYGVgFdDpNCv7UFnjI/projects/ad2262d6-746b-4ec2-88b1-50bb8601a45e/index-quickstart
-## PINECONE_API_KEY=pcsk_3dcvXS_BSUMo7FRLcEC67rLAxmC8UP2Gpj3kHFsoknVgqAx2o2o9pYVvSJwJeBh5uKFJ6u
 ## https://www.pinecone.io/
 ## https://pastebin.com/px9eYmgM
 
