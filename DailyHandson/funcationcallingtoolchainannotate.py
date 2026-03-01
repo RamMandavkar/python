@@ -41,6 +41,9 @@ chat = client.chats.create(
     }
 )
 
+response = chat.send_message("What is multiply of 12 and 8? and then subtract 5 and then add the result by 2")
+print(response.text)
+
 # Gemini will call the function, get the result, and summarize it in one go
 response = chat.send_message("What is 12 plus 8? and then subtract 5 and then multiply the result by 2")
 print(response.text)

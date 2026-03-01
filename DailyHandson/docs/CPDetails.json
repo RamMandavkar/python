@@ -1,0 +1,109 @@
+{
+  "collateral_management_providers": [
+    {
+      "company_name": "National Collateral Management Services Limited (NCML)",
+      "services_offered": [
+        "Procurement",
+        "Storage & Preservation",
+        "Testing & Certification",
+        "Collateral Management",
+        "Commodity-Backed Lending"
+      ],
+      "collateral_types": [
+        "Agricultural Commodities",
+        "Non-Agricultural Commodities",
+        "Warehouse Receipts"
+      ],
+      "key_banking_partners": [
+        "HDFC Bank",
+        "ICICI Bank",
+        "Kotak Mahindra Bank",
+        "SBI"
+      ]
+    },
+    {
+      "company_name": "Shree Shubham Logistics Ltd (SSL)",
+      "services_offered": [
+        "Storage & Preservation",
+        "Commodity Testing & Certification",
+        "Funding Facilitation",
+        "Warehouse Receipt Funding"
+      ],
+      "collateral_types": [
+        "Agricultural Commodities",
+        "Non-Agricultural Commodities",
+        "Pledged Commodities"
+      ],
+      "key_banking_partners": [
+        "Various Private Banks",
+        "Public Financial Institutions",
+        "NBFCs"
+      ]
+    },
+    {
+      "company_name": "Star Agriwarehousing and Collateral Management Limited (StarAgri)",
+      "services_offered": [
+        "Warehousing",
+        "Collateral Management",
+        "Agri-Finance Retailing",
+        "Procurement"
+      ],
+      "collateral_types": [
+        "Agri-Commodities",
+        "Warehouse Receipts"
+      ],
+      "key_banking_partners": [
+        "Major Private Banks",
+        "Financial Institutions"
+      ]
+    },
+    {
+      "company_name": "Origo Commodities India Private Limited",
+      "services_offered": [
+        "Quality Certification",
+        "Price Fluctuation Monitoring",
+        "Fumigation & Pest Control",
+        "Stock Liquidation",
+        "Insurance Management"
+      ],
+      "collateral_types": [
+        "Agri Commodities",
+        "Warehouse Receipts"
+      ],
+      "key_banking_partners": [
+        "Private Banks",
+        "NBFCs",
+        "Corporate Borrowers"
+      ]
+    },
+    {
+      "company_name": "Indian Commodities",
+      "services_offered": [
+        "End-to-End Agro Solutions",
+        "Professional Warehousing",
+        "Collateral Management",
+        "Quality Management"
+      ],
+      "collateral_types": [
+        "Agricultural Assets",
+        "Cotton",
+        "Pulses",
+        "Warehouse Receipts"
+      ],
+      "key_banking_partners": [
+        "Private Financial Institutes",
+        "NBFCs"
+      ]
+    }
+  ],
+  "industry_context": {
+    "primary_role": "Providing secure custody, risk management, and quality certification of assets pledged as collateral for bank loans.",
+    "target_clients": [
+      "Private Banks",
+      "Public Sector Banks",
+      "NBFCs",
+      "Commodity Traders",
+      "Farmers"
+    ]
+  }
+}

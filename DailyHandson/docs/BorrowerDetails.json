@@ -1,0 +1,65 @@
+{
+  "bankName": "Example Private Bank Ltd.",
+  "timestamp": "2026-03-01T22:24:00Z",
+  "borrower": {
+    "borrowerId": "BRW-84759382",
+    "kycStatus": "Verified",
+    "personalDetails": {
+      "firstName": "Aarav",
+      "lastName": "Patel",
+      "dateOfBirth": "1988-11-20",
+      "gender": "Male",
+      "contact": {
+        "email": "aarav.mockdata@example.com",
+        "phonePrimary": "+91-9876500000"
+      },
+      "address": {
+        "street": "45 Fake Residency, MG Road",
+        "city": "Pune",
+        "state": "Maharashtra",
+        "postalCode": "411001",
+        "country": "India"
+      }
+    },
+    "employmentDetails": {
+      "employmentType": "Salaried",
+      "employerName": "Tech Innovations Pvt Ltd",
+      "designation": "Senior Software Engineer",
+      "annualIncome": 1800000,
+      "currency": "INR"
+    },
+    "creditProfile": {
+      "creditScore": 795,
+      "creditBureau": "CIBIL",
+      "lastUpdated": "2026-02-15"
+    },
+    "activeLoans": [
+      {
+        "loanId": "HL-99887766",
+        "loanType": "Home Loan",
+        "sanctionedAmount": 6500000,
+        "currency": "INR",
+        "interestRate": 8.4,
+        "interestType": "Floating",
+        "tenureMonths": 240,
+        "emiAmount": 56000,
+        "outstandingPrincipal": 6100000,
+        "loanStatus": "Standard",
+        "disbursementDate": "2024-05-10"
+      },
+      {
+        "loanId": "PL-11223344",
+        "loanType": "Personal Loan",
+        "sanctionedAmount": 500000,
+        "currency": "INR",
+        "interestRate": 11.5,
+        "interestType": "Fixed",
+        "tenureMonths": 36,
+        "emiAmount": 16485,
+        "outstandingPrincipal": 250000,
+        "loanStatus": "Standard",
+        "disbursementDate": "2025-01-20"
+      }
+    ]
+  }
+}
