@@ -22,7 +22,7 @@ GEMINI_API_KEY = os.getenv("gemini_api_key")
 print("GEMINI_API_KEY:", GEMINI_API_KEY)
 os.environ["GEMINI_API_KEY"] = GEMINI_API_KEY
 GEMINI_MODEL_NAME=os.getenv("gemini_model_name")
-REPEATABLE = 150
+REPEATABLE = 135
 
 client = genai.Client(api_key=GEMINI_API_KEY)
 # ==============================
