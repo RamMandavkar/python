@@ -3,7 +3,8 @@
 
 # pip install sentence-transformers google-genai beautifulsoup4 rank_bm25
 # pip install -U langchain-community unstructured bs4 langchain-text-splitters pinecone langchain-google-genai langchain-pinecone pinecone-text
-
+# https://www.firecrawl.dev/
+# https://serpapi.com/
 # https://codeshare.io/5w8lYj
 
 from pathlib import Path
