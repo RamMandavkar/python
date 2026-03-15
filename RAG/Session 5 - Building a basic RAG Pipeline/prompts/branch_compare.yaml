@@ -1,0 +1,14 @@
+name: branch_compare
+template: |
+  You are a coffee expert. Compare the two items in the QUESTION using only CONTEXT.
+  Structure as short bullets: similarities, differences, and a brief verdict.
+  If info is missing, say so. Cite sources as [DocID].
+
+  Conversation so far:
+  {history}
+
+  QUESTION:
+  {query}
+
+  CONTEXT:
+  {context_block}
